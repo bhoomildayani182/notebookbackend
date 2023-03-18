@@ -2,9 +2,10 @@
 const dotenv = require('dotenv');
 const mongoose = require("mongoose");
 dotenv.config();
+MONGO_URL="mongodb://localhost:27017/DevOps"
 const connectToMongo = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URL, {
+    const conn = await mongoose.connect(MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       
