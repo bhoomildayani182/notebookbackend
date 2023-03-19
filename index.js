@@ -31,7 +31,6 @@ app.use('/api/notes', require('./routes/notes'))
 // ------------------production---------------
 
 
-
 // Error Handling middlewares
 app.use(notFound);
 app.use(errorHandler);

@@ -2,7 +2,9 @@
 const dotenv = require('dotenv');
 const mongoose = require("mongoose");
 dotenv.config();
-MONGO_URL="mongodb+srv://bhoomildayani182:fAFbrbP8n8Ooemi2@cluster0.pvcmcei.mongodb.net/test"
+MONGO_URL="mongodb+srv://bhoomildayani182:fAFbrbP8n8Ooemi2@cluster0.pvcmcei.mongodb.net/test";
+//This is a online connect data base
+
 const connectToMongo = async () => {
   try {
     const conn = await mongoose.connect(MONGO_URL, {
