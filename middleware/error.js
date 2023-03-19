@@ -9,7 +9,7 @@ const notFound = (req, res, next) => {
     res.status(statusCode);
     res.json({
       message: err.message,
-      stack: NODE_ENV === "production" ? null : err.stack,
+      //stack: NODE_ENV === "production" ? null : err.stack,
     });
   };
   
